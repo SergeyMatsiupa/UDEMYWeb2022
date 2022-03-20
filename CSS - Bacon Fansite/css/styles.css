@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+/* img {
+    background-color: red;
+} */
+
+.bacon {
+    background-color: green;
+}
+
+.brocoli {
+    background-color: red;
+}
+
+#heading {
+    color: blue;
+}
+
+.circular {
+    border-radius: 100%;
+}
