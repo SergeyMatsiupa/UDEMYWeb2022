@@ -1,0 +1,101 @@
+body {
+    background: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    height: 6.66667vw;
+    /* vertical-align: middle; */
+    margin: 2.7778vw 0 0 3.8194vw;
+    position: relative;
+    
+}
+
+
+.header-logo {
+    width: 3.3333vw;
+}
+
+.header-logo-img {
+    width: 100%;
+}
+
+.header-txt-bold {
+    font-weight: 700;
+}
+
+.header-menu {
+    height: 6.66667vw;
+    /* vertical-align: middle; */
+    /* margin: auto 0; */
+    display: flex;
+    align-items: center;
+    padding: 0 8.5417vw 0 11.4583vw;
+    margin-left: 35.2083vw;
+    background: rgba(255, 255, 255, 0.04);
+    /* backdrop-filter: blur(81.5485px); */
+    /* filter: blur(20px); */
+    /* -webkit-backdrop-filter: blur(2em); */
+    position: relative;
+}
+.header-menu::before {
+    background: url('../assets/home/background-home-desktop.jpg') 0 0 / 100% fixed;
+    /* background-position-x: 0px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* filter: blur(20px); */
+    content: '';
+}
+
+.header-menu-elem {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1111vw;
+    line-height: 1.3194vw;
+    letter-spacing: 0.1875vw;
+    text-transform: uppercase;
+}
+
+.header-menu-elem-a {
+
+}
+
+.header-menu-elem-a:visited {
+    color: white;
+}
+
+.header-menu-elem-drop {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    min-width: 9.0278vw;
+}
+
+.header-menu-elem:hover .header-menu-elem-drop {
+    display: block;
+}
+
+.header-line {
+    width: 32.8472vw;
+    height: 0.06944vw;
+    left: 7.7778vw;
+    top: 3.33334vw;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: absolute;
+    z-index: 1;
+}

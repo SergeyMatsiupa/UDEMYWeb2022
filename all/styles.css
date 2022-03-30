@@ -1,0 +1,56 @@
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    left: 200px;
+    display: inline-block; */
+        /* position: absolute; */
+        /* right: 20px; */
+        top: 200px;
+        left: 200px;
+            position: fixed;
+}
+.yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    display: inline-block;
+    right: 100px; */
+        position: absolute;
+        left: 0;
+        top: 0;
+}
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    /* position: relative;
+    display: inline-block;
+    right: 100px; */
+        position: absolute;
+        left: 100px;
+        top: 100px;
+}
+
+#cont-rel1-id {
+    position: relative;
+    height: 350px;
+    background-color: gray;
+}
+
+p {
+    background-color: red;
+    width: 100px;
+    display: inline-block;
+}
+
+span {
+    background-color: blue;
+    width: 100px;
+}
+
+.second-p {
+    visibility: hidden;
+}
