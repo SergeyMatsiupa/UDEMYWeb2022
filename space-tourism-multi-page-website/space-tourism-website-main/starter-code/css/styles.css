@@ -196,3 +196,203 @@ h1 {
 .a-clear {
     text-decoration: none;
 }
+
+.top-menu-menu-checkbox {
+	display: none;
+    position: absolute;
+    z-index: 3;
+    width: 6.4vw;
+    height: 5.6vw;
+    opacity: 0;
+}
+
+#open-menu-img,  #close-menu-img{
+    display: none;
+}
+
+.top-menu-menu-check-wrapper {
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url('../assets/home/background-home-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .header {
+        height: 12.5vw;
+        margin: 0 0 0 5.078125vw;
+    }
+
+    .header-logo {
+        width: 6.25vw;
+    }
+
+    .header-line {
+        display: none;
+    }
+
+    .header-menu {
+        height: 12.5vw;
+        width: 58.59375vw;
+        margin-left: 30.078125vw;
+        padding: 0 0 0 6.25vw;
+    }
+
+    .header-menu::before {
+        background: url('../assets/home/background-home-tablet.jpg') 0 0 / 100% fixed;
+    }
+
+    .header-menu-elem {
+        font-size: 1.823vw;
+        line-height: 2.2135vw;
+        letter-spacing: 0.3076vw;
+        
+        margin-right: 4.1667vw;
+    }
+
+    .header-txt-bold {
+        display: none;
+    }
+
+    .header-menu-elem-a:hover, .header-menu-elem-drop-elem-a:hover {
+        text-decoration: underline rgb(138, 139, 144) 0.4vw;
+    }
+
+    .header-menu-elem-a:hover, .header-menu-elem-a:active {
+        text-underline-offset: 4.9vw;
+    }
+
+    .main-space {
+        padding: 13.8021vw 0 11.71875vw 0;
+    }
+
+    .container-2-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .space-block {
+        width: 58.5938vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 2.60417vw;
+        line-height: 3.125vw;
+        letter-spacing: 0.4395vw;
+    }
+
+    h1 {
+        font-size: 19.53125vw;
+        line-height: 19.53125vw;
+        margin: 3.125vw 0;
+    }
+
+    .small-text {
+        font-size: 2.0833vw;
+        line-height: 3.6458vw;
+    }
+
+    .explore-block {
+        margin: 20.3125vw auto 0 auto;
+        width: 31.51042vw;
+        height: 31.51042vw;
+        font-size: 4.1667vw;
+        line-height: 2.57vw;
+        letter-spacing: 0.1389vw;
+    }
+
+    .explore-block:hover::before {
+        position: absolute;
+        top: -10.0365vw;
+        left: -10.0365vw;
+        width: 51.75069vw;
+        height: 51.75069vw;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .header {
+        height: 23.4667vw;
+        margin: 0 6.4vw 0 6.4vw;
+    }
+
+    .header-logo {
+        width: 10.6667vw;
+    }
+
+    .header-menu::before {
+        display: none;
+    }
+
+    .header-menu {
+        background: none;
+        justify-content:end;
+    }
+
+    .header-menu-list {
+        display: none;
+        z-index: 1;
+    }
+
+    #open-menu-img {
+        display: inline-block;
+    }
+
+    #close-menu-img {
+        display: none;
+    }
+
+    .top-menu-menu-checkbox {
+        display: block;
+        right: 0;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-check-wrapper > #close-menu-img {
+        display: inline-block;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-check-wrapper > #open-menu-img {
+        display: none;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .header-menu-list {
+        display: block;
+        position: fixed;
+        background: black;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding-top: 16vw;
+        padding-left: 40vw;
+    }
+
+    .header-menu-elem {
+        display: block;
+        font-size: 4.26667vw;
+        line-height: 5.0667vw;
+        letter-spacing: 0.72vw;
+    }
+
+    .header-menu-elem-drop {
+        display: none;
+        position: static;
+        z-index: auto;
+        min-width: 9.0278vw;
+        padding: 1vw;
+    }
+
+    /* .header-menu-elem:hover .header-menu-elem-drop {
+        display: none;
+    }
+
+    .header-menu-elem:active .header-menu-elem-drop {
+        display: block; */
+    }
+}
