@@ -1,5 +1,12 @@
-body {
+.body-for-index {
     background: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.body-for-moon {
+    background: url('../assets/destination/background-destination-desktop.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
@@ -74,19 +81,19 @@ body {
     margin-right: 4.1667vw;
 }
 
-.header-menu-elem-a, .header-menu-elem-drop-elem-a {
+.menu-elem-a, .header-menu-elem-drop-elem-a {
     text-decoration: none;
 }
 
-.header-menu-elem-a, .header-menu-elem-drop-elem-a,header-menu-elem-a:visited, .header-menu-elem-drop-elem-a:visited {
+.menu-elem-a, .header-menu-elem-drop-elem-a,menu-elem-a:visited, .header-menu-elem-drop-elem-a:visited {
     color: white;
 }
 
-.header-menu-elem-a:hover, .header-menu-elem-drop-elem-a:hover {
+.menu-elem-a:hover, .header-menu-elem-drop-elem-a:hover {
     text-decoration: underline rgb(138, 139, 144) 0.2083vw;
 }
 
-.header-menu-elem-a:active, .header-menu-elem-drop-elem-a:active {
+.menu-elem-a:active, .header-menu-elem-drop-elem-a:active {
     text-decoration: underline white 0.2083vw;
 }
 
@@ -115,6 +122,7 @@ body {
 .header-line {
     width: 32.8472vw;
     height: 0.06944vw;
+    min-height: 1px;
     left: 7.7778vw;
     top: 3.33334vw;
     background: #FFFFFF;
@@ -214,8 +222,93 @@ h1 {
     z-index: 2;
 }
 
+.active-section-header {
+    text-decoration: underline white 0.2083vw;
+    text-underline-offset: 2.6vw;
+}
+
+
+/* for destinations */
+.main-dest {
+    padding: 5.2778vw 0 7.7778vw 0;
+}
+
+.img-planet {
+    width: 30.90278vw;
+    height: 30.90278vw;
+    margin: 6.7361vw 0 0 4.4445vw;
+}
+
+.menu-elem-planets {
+    display: inline;
+    margin: 0 2.43056vw 0 0;
+    font-family: 'Barlow Condensed';
+    font-size: 1.1111vw;
+    line-height: 1.3195vw;
+    letter-spacing: 0.1875vw;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 6.9444vw;
+    line-height: 7.9861vw;
+    text-transform: uppercase;
+    margin: 2.5694vw 0 0.9722vw 0;
+}
+
+.planet-line {
+    width: 30.8333vw;
+    height: 0.06944vw;
+    min-height: 1px;
+    background: #383B4B;
+    margin: 3.75vw 0 1.9445vw;
+}
+
+.planets-menu-elem-a:hover, .planets-menu-elem-a:active {
+    text-underline-offset: 1vw;
+}
+
+.active-section-planets {
+    text-decoration: underline white 0.2083vw;
+    text-underline-offset: 1vw;
+}
+
+.planet-distance-time-columns {
+    display: flex;
+}
+
+.planet-distance-time {
+    margin: 0 5.4861vw 0 0;
+}
+
+
+.planet-distance-time-captions {
+    font-family: 'Barlow Condensed';
+    font-size: 0.9722vw;
+    line-height: 1.18056vw;
+    letter-spacing: 0.1641vw;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    margin: 1.9445vw 0 0.8333vw 0;
+}
+
+.planet-distance-time-text {
+    font-family: 'Bellefair';
+    font-size: 1.9445vw;
+    line-height: 2.2222vw;
+    text-transform: uppercase;
+}
+
+.dest-txt-bold {
+	font-weight: 700;
+	color: rgb(77, 79, 87);
+	margin-right: 1vw;
+}
+
+
 @media (max-width: 768px) {
-    body {
+    .body-for-index {
         background: url('../assets/home/background-home-tablet.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -257,7 +350,7 @@ h1 {
         display: none;
     }
 
-    .header-menu-elem-a:hover, .header-menu-elem-drop-elem-a:hover {
+    .menu-elem-a:hover, .header-menu-elem-drop-elem-a:hover {
         text-decoration: underline rgb(138, 139, 144) 0.4vw;
     }
 
@@ -313,10 +406,58 @@ h1 {
         width: 51.75069vw;
         height: 51.75069vw;
     }
+
+    .active-section-header {
+        text-underline-offset: 5vw;
+    }
+
+
+    /* for destinations */
+    .body-for-moon {
+        background: url('../assets/destination/background-destination-tablet.jpg ');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .white-text-tablet {
+        color: white;
+        text-align: left;
+    }
+
+    .container {
+        width: 89.97396vw;
+    }
+
+    .planet-img-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-planet {
+        width: 39.0625vw;
+        height: 39.0625vw;
+        margin: 7.8125vw auto 6.8vw auto;
+    }
+
+    .menu-elem-planets {
+        font-size: 2.0833vw;
+        line-height: 2.47396vw;
+        letter-spacing: 0.3516vw;
+        text-transform: uppercase;
+    }
 }
 
-
 @media (max-width: 375px) {
+    .body-for-index {
+        background: url('../assets/home/background-home-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .container {
+        width: 87.2vw;
+    }
+    
     .header {
         height: 23.4667vw;
         margin: 0 6.4vw 0 6.4vw;
@@ -370,13 +511,13 @@ h1 {
         bottom: 0;
         right: 0;
         padding-top: 16vw;
-        padding-left: 40vw;
+        padding-left: 35vw;
     }
 
     .header-menu-elem {
         display: block;
-        font-size: 4.26667vw;
-        line-height: 5.0667vw;
+        font-size: 5vw;
+        line-height: 6vw;
         letter-spacing: 0.72vw;
     }
 
@@ -388,11 +529,52 @@ h1 {
         padding: 1vw;
     }
 
-    /* .header-menu-elem:hover .header-menu-elem-drop {
-        display: none;
+    .header-menu-elem-drop-elem {
+        margin: 0 0 0 2vw;
     }
 
-    .header-menu-elem:active .header-menu-elem-drop {
-        display: block; */
+    .header-menu-elem-a:hover, .header-menu-elem-a:active {
+        text-underline-offset: 0.3vw;
+    }
+
+    h5 {
+        font-size: 4.26667vw;
+        line-height: 5.12vw;
+        letter-spacing: 0.72vw;
+    }
+
+    h1 {
+        font-size: 21.3333vw;
+        line-height: 26.6667vw;
+        margin: 4.5vw 0;
+    }
+
+    .main-space {
+        padding: 6vw 0 14vw 0;
+    }
+
+    .space-block {
+        width: 85vw;
+    }
+
+    .small-text {
+        font-size: 4vw;
+        line-height: 6.6667vw;
+    }
+
+    .explore-block {
+        margin: 20.3125vw auto 0 auto;
+        width: 40vw;
+        height: 40vw;
+        font-size: 5.3333vw;
+        line-height: 6.112vw;
+        letter-spacing: 0.3333vw;
+    }
+
+    .explore-block:hover::before {
+        top: -12.8467vw;
+        left: -12.8467vw;
+        width: 65.6935vw;
+        height: 65.6935vw;
     }
 }
