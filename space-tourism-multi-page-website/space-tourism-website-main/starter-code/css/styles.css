@@ -368,7 +368,7 @@ h2 {
     }
 
     .space-block {
-        width: 58.5938vw;
+        width: 74.609375vw;
         margin: 0 auto;
         text-align: center;
     }
@@ -444,6 +444,27 @@ h2 {
         line-height: 2.47396vw;
         letter-spacing: 0.3516vw;
         text-transform: uppercase;
+    }
+
+    .active-section-planets {
+        text-decoration: underline white 0.390625vw;
+        text-underline-offset: 1.5625vw;
+    }
+
+    .planets-menu-elem-a:hover, .planets-menu-elem-a:active {
+        text-underline-offset: 1.5625vw;
+    }
+
+    h2 {
+        font-size: 10.4167vw;
+        line-height: 11.97917vw;
+        text-transform: uppercase;
+        margin: 6vw 0 0.9722vw 0;
+    }
+
+    .planet-line {
+        width: 74.609375vw;
+        margin: 6.38021vw 0 3.7760vw;
     }
 }
 
