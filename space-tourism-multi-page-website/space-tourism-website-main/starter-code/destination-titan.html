@@ -6,32 +6,158 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website - Titan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">  
 </head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
+<body class="body-for-destination">
+  <header class="header">
+    <div class="header-logo">
+      <img class="header-logo-img" src="assets/shared/logo.svg" alt="">
+    </div>
+    <div class="header-line">
+    </div>
+    <div class="header-menu">
+      <input type="checkbox" class="top-menu-menu-checkbox">
+      <div class="top-menu-menu-check-wrapper">
+        <img src="assets/shared/icon-hamburger.svg" alt="open menu" id="open-menu-img">
+        <img src="assets/shared/icon-close.svg" alt="close menu" id="close-menu-img">
+      </div>
+      <ul class="header-menu-list">
+         <li class="header-menu-elem">
+           <a class="menu-elem-a header-menu-elem-a" href="index.html">
+            <span class="header-txt-bold">00 </span>Home
+           </a>
+         </li>
+         <li class="header-menu-elem">
+          <span class="active-section-header">
+            <span class="header-txt-bold">01 </span>Destination
+          </span>
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-moon.html">Moon</a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-mars.html">
+                Mars
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-europa.html">
+                Europa
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-titan.html">
+                Titan
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span class="header-txt-bold">02 </span>Crew
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-commander.html">
+                Commander
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-specialist.html">
+                Mission Specialist
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-pilot.html">
+                Pilot
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-engineer.html">
+                Flight Engineer
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span class="header-txt-bold">03 </span>Technology
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-vehicle.html">
+                Launch Vehicle
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-spaceport.html">
+                Spaceport
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-capsule.html">
+                Space Capsule
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+  </header>
+  <main class="container main-dest">
+    <div class="container-2-columns container-2-columns-dest">
+      <div class="planet-img-block">
+        <h5 class="white-text-tablet">
+          <span class="dest-txt-bold">01 </span>Pick your destination
+        </h5>
+        <img class="img-planet" src="assets/destination/image-titan.png" alt="Titan">
+      </div>
+      <div class="space-block">
+        <ul>
+          <li class="menu-elem-planets">
+            <a class="menu-elem-a planets-menu-elem-a" href="destination-moon.html">Moon</a>
+          </li>
+          <li class="menu-elem-planets">
+            <a class="menu-elem-a planets-menu-elem-a" href="destination-mars.html">Mars</a>
+          </li>
+          <li class="menu-elem-planets">
+            <a class="menu-elem-a planets-menu-elem-a" href="destination-europa.html">Europa</a>
+          </li>
+          <li class="menu-elem-planets">
+            <a class="menu-elem-a planets-menu-elem-a active-section-planets" href="destination-titan.html">Titan</a>
+          </li>
+        </ul>
+        <h2>
+          Titan
+        </h2>
+        <p class="small-text">
+          The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <div class="planet-line"></div>
+        <div class="planet-distance-time-columns">
+          <div class="planet-distance-time">
+            <p class="planet-distance-time-captions">
+              Avg. distance
+            </p>
+            <p class="planet-distance-time-text">
+              1.6 BIL. km
+            </p>
+          </div>
+          <div class="planet-distance-time">
+            <p class="planet-distance-time-captions">
+              Est. travel time
+            </p>
+            <p class="planet-distance-time-text">
+              7 years
+            </p>
+          </div>
+        </div>
+        
+      
+        
+      </div>
+    </div>
+  </main>
 </body>
 </html>

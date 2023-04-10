@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 30px;
 }
 
@@ -128,11 +128,10 @@ hr {
 
 #get-in-touch-txt-id {
     width: 40%;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 #contact-me-btn-id, .btn {
-    margin: 40px auto;
     color: white;
     border: none;
     background: linear-gradient(180deg, #11cdd4, #11999e 100%);

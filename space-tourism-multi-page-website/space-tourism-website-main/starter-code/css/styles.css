@@ -1,3 +1,9 @@
+.terminology-block {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .body-for-index {
     background: url('../assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
@@ -5,8 +11,22 @@
     color: white;
 }
 
-.body-for-moon {
+.body-for-destination {
     background: url('../assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.body-for-crew {
+    background: url('../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.body-for-technology {
+    background: url('../assets/technology/background-technology-desktop.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
@@ -138,12 +158,23 @@
 
 .container-2-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: flex-end;
+}
+
+.container-2-columns-dest {
+    margin: 0 0 7.1463vw 0;
 }
 
 .space-block {
     width: 31.25vw;
+    /* width: 51vw; */
+}
+
+
+.crew-block {
+    /* width: 31.25vw; */
+    width: 65vw;
 }
 
 h5 {
@@ -155,6 +186,16 @@ h5 {
     text-transform: uppercase;
 }
 
+.terminology-caption-font {
+    font-family: 'Barlow Condensed';
+    font-size: 0.969vw;
+    line-height: 1.15vw;
+    letter-spacing: 0.1635vw;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    margin: 10vw 0 0 0;
+}
+
 h1 {
     font-family: 'Bellefair', serif;
     font-size: 10.41667vw;
@@ -163,11 +204,30 @@ h1 {
     margin: 1.6667vw 0;
 }
 
+h4 {
+    font-family: 'Bellefair', serif;
+    font-size: 1.938vw;
+    line-height: 2.2408vw;
+    text-transform: uppercase;
+    color: rgb(77, 79, 87);;
+    margin: 9.3266vw 0 0 0; 
+}
+
+h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 3.3915vw;
+    line-height: 3.876vw;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    margin: 0.9084vw 0 1.6352vw; 
+}
+
 .small-text {
     font-family: 'Barlow';
     font-size: 1.25vw;
     line-height: 2.2222vw;
     color: #D0D6F9;
+    width: 30vw;
 }
 
 .explore-block {
@@ -185,6 +245,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-left: 27vw;
 }
 
 .explore-block:hover:before {
@@ -230,7 +291,12 @@ h1 {
 
 /* for destinations */
 .main-dest {
-    padding: 5.2778vw 0 7.7778vw 0;
+    padding: 5.2778vw 0 0 0;
+}
+
+/* for destinations */
+.main-crew {
+    padding: 3.75vw 0 0 0;
 }
 
 .img-planet {
@@ -279,7 +345,7 @@ h2 {
 }
 
 .planet-distance-time {
-    margin: 0 5.4861vw 0 0;
+    margin: 0 5vw 0 0;
 }
 
 
@@ -306,6 +372,86 @@ h2 {
 	margin-right: 1vw;
 }
 
+.technology-slider-ul {
+    cursor: default;
+    /* margin: 7.2674vw 0 5.6928vw 0; */
+}
+
+.crew-slider-ul {
+    cursor: default;
+    margin: 7.2674vw 0 5.6928vw 0;
+}
+
+.crew-slider-item {
+    display: inline-block;
+    margin: 0 1.4535vw 0 0;
+}
+
+.technology-slider-item {
+    display: block;
+    margin: 0 0 1.938vw 0;
+}
+
+.crew-slider-item-a {
+    text-decoration: none;
+}
+
+.crew-slider-item-button:hover {
+    background: #FFFFFF;
+    opacity: 0.5;
+}
+
+.crew-slider-item-button {
+    width: 0.9084vw;
+    height: 0.9084vw;
+    background: #FFFFFF;
+    opacity: 0.17;
+    border-radius: 100%;
+}
+
+.technology-slider-item-button {
+    width: 4.845vw;
+    height: 4.845vw;
+    /* background: #FFFFFF; */
+    border: 1px solid #FFFFFF;
+    /* opacity: 0; */
+    border-radius: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    /* vertical-align: middle; */
+    font-size: 1.938vw;
+    /* padding: 1.3324vw 0 0 0; */
+}
+
+.active-item-white, .active-item-white:hover {
+    background: #FFFFFF;
+    opacity: unset;
+}
+
+.img-commander {
+    height: 43.1202vw;
+    /* position: absolute;
+    bottom: 0px;
+    left: 54.5vw; */
+}
+
+.img-specialist {
+    height: 39.6076vw;
+    /* position: absolute;
+    bottom: 0px;
+    left: 54.5vw; */
+}
+
+.img-technology {
+    height: 31.9162vw;
+    position: absolute;
+    right: 0;
+    top: 19vw;
+}
+
+.planet-img-block {
+    width: 45vw;
+}
 
 @media (max-width: 768px) {
     .body-for-index {
@@ -413,7 +559,7 @@ h2 {
 
 
     /* for destinations */
-    .body-for-moon {
+    .body-for-destination {
         background: url('../assets/destination/background-destination-tablet.jpg ');
         background-repeat: no-repeat;
         background-size: 100%;

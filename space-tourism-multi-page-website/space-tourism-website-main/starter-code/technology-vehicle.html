@@ -6,27 +6,152 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website - Technology - Launch vehicle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">  
 </head>
-<body>
+<body class="body-for-technology">
+  <header class="header">
+    <div class="header-logo">
+      <img class="header-logo-img" src="assets/shared/logo.svg" alt="">
+    </div>
+    <div class="header-line">
+    </div>
+    <div class="header-menu">
+      <input type="checkbox" class="top-menu-menu-checkbox">
+      <div class="top-menu-menu-check-wrapper">
+        <img src="assets/shared/icon-hamburger.svg" alt="open menu" id="open-menu-img">
+        <img src="assets/shared/icon-close.svg" alt="close menu" id="close-menu-img">
+      </div>
+      <ul class="header-menu-list">
+         <li class="header-menu-elem">
+           <a class="menu-elem-a header-menu-elem-a" href="index.html">
+            <span class="header-txt-bold">00 </span>Home
+           </a>
+         </li>
+         <li class="header-menu-elem">
+          <span class="header-txt-bold">02 </span>Destination
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-moon.html">Moon</a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-mars.html">
+                Mars
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-europa.html">
+                Europa
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-titan.html">
+                Titan
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span><span class="header-txt-bold">02</span> Crew</span>
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-commander.html">
+                Commander
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-specialist.html">
+                Mission Specialist
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-pilot.html">
+                Pilot
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-engineer.html">
+                Flight Engineer
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span class="active-section-header"><span class="header-txt-bold">03 </span>Technology</span>
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-vehicle.html">
+                Launch Vehicle
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-spaceport.html">
+                Spaceport
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-capsule.html">
+                Space Capsule
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+  </header>
+  <main class="container main-crew">
+    <div class="container-2-columns">
+      <div>
+        <h5 class="white-text-tablet">
+          <span class="dest-txt-bold">03 </span>Space launch 101
+        </h5>
+        <div class="terminology-block">
+          <div>
+            <ul class="technology-slider-ul">
+              <li class="technology-slider-item">
+                <a class="crew-slider-item-a" href="crew-commander.html" alt="crew commander">
+                  <div class="technology-slider-item-button">1</div>
+                </a>
+              </li>
+              <li class="technology-slider-item">
+                <a class="crew-slider-item-a" href="crew-specialist.html" alt="crew specialist">
+                  <div class="technology-slider-item-button">2</div>
+                </a>
+              </li>
+              <li class="technology-slider-item">
+                <a class="crew-slider-item-a" href="crew-pilot.html" alt="crew pilot">
+                  <div class="technology-slider-item-button">3</div>
+                </a>
+              </li>
+              <li class="technology-slider-item">
+                <a class="crew-slider-item-a" href="crew-engineer.html" alt="crew engineer">
+                  <div class="technology-slider-item-button active-item-white">4</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="terminology-caption-font">
+              The terminology…
+            </p>
+            <h3>
+              LAUNCH VEHICLE
+            </h3>
+            <p class="small-text">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="planet-img-block">
+        <img class="img-technology" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="Anousheh Ansari">
+      </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+    </div>
+  </main>
 </body>
 </html>

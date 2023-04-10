@@ -6,22 +6,148 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website - Crew - Anousheh Ansari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">  
 </head>
-<body>
+<body class="body-for-crew">
+  <header class="header">
+    <div class="header-logo">
+      <img class="header-logo-img" src="assets/shared/logo.svg" alt="">
+    </div>
+    <div class="header-line">
+    </div>
+    <div class="header-menu">
+      <input type="checkbox" class="top-menu-menu-checkbox">
+      <div class="top-menu-menu-check-wrapper">
+        <img src="assets/shared/icon-hamburger.svg" alt="open menu" id="open-menu-img">
+        <img src="assets/shared/icon-close.svg" alt="close menu" id="close-menu-img">
+      </div>
+      <ul class="header-menu-list">
+         <li class="header-menu-elem">
+           <a class="menu-elem-a header-menu-elem-a" href="index.html">
+            <span class="header-txt-bold">00 </span>Home
+           </a>
+         </li>
+         <li class="header-menu-elem">
+          <span class="header-txt-bold">02 </span>Destination
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-moon.html">Moon</a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-mars.html">
+                Mars
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-europa.html">
+                Europa
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="destination-titan.html">
+                Titan
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span class="active-section-header"><span class="header-txt-bold">02</span> Crew</span>
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-commander.html">
+                Commander
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-specialist.html">
+                Mission Specialist
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-pilot.html">
+                Pilot
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="crew-engineer.html">
+                Flight Engineer
+              </a>
+            </li>
+          </ul>
+         </li>
+         <li class="header-menu-elem">
+          <span class="header-txt-bold">03 </span>Technology
+          <ul class="header-menu-elem-drop">
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-vehicle.html">
+                Launch Vehicle
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-spaceport.html">
+                Spaceport
+              </a>
+            </li>
+            <li class="header-menu-elem-drop-elem">
+              <a class="header-menu-elem-drop-elem-a" href="technology-capsule.html">
+                Space Capsule
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+  </header>
+  <main class="container main-crew">
+    <div class="container-2-columns">
+      <div class="crew-block">
+        <h5 class="white-text-tablet">
+          <span class="dest-txt-bold">02 </span>Meet your crew
+        </h5>
+        <h4>
+          Flight Engineer
+        </h4>
+        <h3>
+          Anousheh Ansari
+        </h3>
+        <p class="small-text">
+          Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+        </p>
+        
+        
+        <ul class="crew-slider-ul">
+          <li class="crew-slider-item">
+            <a class="crew-slider-item-a" href="crew-commander.html" alt="crew commander">
+              <div class="crew-slider-item-button"></div>
+            </a>
+          </li>
+          <li class="crew-slider-item">
+            <a class="crew-slider-item-a" href="crew-specialist.html" alt="crew specialist">
+              <div class="crew-slider-item-button"></div>
+            </a>
+          </li>
+          <li class="crew-slider-item">
+            <a class="crew-slider-item-a" href="crew-pilot.html" alt="crew pilot">
+              <div class="crew-slider-item-button"></div>
+            </a>
+          </li>
+          <li class="crew-slider-item">
+            <a class="crew-slider-item-a" href="crew-engineer.html" alt="crew engineer">
+              <div class="crew-slider-item-button active-item-white"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="planet-img-block">
+        <img class="img-specialist" src="assets/crew/image-anousheh-ansari.png" alt="Anousheh Ansari">
+      </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Flight Engineer
-  Anousheh Ansari
-
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
+    </div>
+  </main>
 </body>
 </html>
